@@ -952,7 +952,7 @@ class xpifMaker {
             $exceptionMediaColNode = $po->importNode($exceptionMediaColNode, true);
 
             //create sides element
-            $sidesElement = $po->createElement("sides", $exceptionClean['sides']);
+            $sidesElement = $po->createElement("sides", this->inflectPlex($exceptionClean['sides']));
             $sidesElement->setAttribute("syntax", "keyword");
 
             //append
